@@ -6,7 +6,6 @@
       <class name="exe.Arthadb_Automation">
         <methods>
           <include name="ArthaDB_Record_Type_Check_TC008"/>
-          <include name="ArthaDB_ZipCode_TC013"/>
           <include name="ArthaDB_Customer_FirstName_Check_TC009"/>
           <include name="ArthaDB_ChargeSign_Check_TC007"/>
           <include name="ArthaDB_Customers_SSN_Check_TC010"/>

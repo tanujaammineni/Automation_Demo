@@ -1,65 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="5" total="14" passed="9">
+<testng-results skipped="0" failed="4" total="13" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="1701" started-at="2017-10-04T12:58:19Z" finished-at="2017-10-04T12:58:21Z">
+  <suite name="Suite" duration-ms="831" started-at="2017-10-07T09:00:27Z" finished-at="2017-10-07T09:00:28Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="1701" started-at="2017-10-04T12:58:19Z" finished-at="2017-10-04T12:58:21Z">
+    <test name="Test" duration-ms="831" started-at="2017-10-07T09:00:27Z" finished-at="2017-10-07T09:00:28Z">
       <class name="exe.Arthadb_Automation">
-        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@31a5c39e]" name="DB_Details" is-config="true" duration-ms="1157" started-at="2017-10-04T18:28:19Z" finished-at="2017-10-04T18:28:20Z">
+        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@1d057a39]" name="DB_Details" is-config="true" duration-ms="562" started-at="2017-10-07T14:30:27Z" finished-at="2017-10-07T14:30:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DB_Details -->
-        <test-method status="PASS" signature="ArthaDB_ProdCodes_Check_TC001()[pri:0, instance:exe.Arthadb_Automation@31a5c39e]" name="ArthaDB_ProdCodes_Check_TC001" duration-ms="29" started-at="2017-10-04T18:28:20Z" finished-at="2017-10-04T18:28:20Z">
+        <test-method status="PASS" signature="ArthaDB_ProdCodes_Check_TC001()[pri:0, instance:exe.Arthadb_Automation@1d057a39]" name="ArthaDB_ProdCodes_Check_TC001" duration-ms="16" started-at="2017-10-07T14:30:28Z" finished-at="2017-10-07T14:30:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ArthaDB_ProdCodes_Check_TC001 -->
-        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@31a5c39e]" name="DB_Details" is-config="true" duration-ms="21" started-at="2017-10-04T18:28:20Z" finished-at="2017-10-04T18:28:20Z">
+        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@1d057a39]" name="DB_Details" is-config="true" duration-ms="0" started-at="2017-10-07T14:30:28Z" finished-at="2017-10-07T14:30:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DB_Details -->
-        <test-method status="PASS" signature="ArthaDB_AuditDates_Check_TC002()[pri:0, instance:exe.Arthadb_Automation@31a5c39e]" name="ArthaDB_AuditDates_Check_TC002" duration-ms="10" started-at="2017-10-04T18:28:20Z" finished-at="2017-10-04T18:28:20Z">
+        <test-method status="PASS" signature="ArthaDB_AuditDates_Check_TC002()[pri:0, instance:exe.Arthadb_Automation@1d057a39]" name="ArthaDB_AuditDates_Check_TC002" duration-ms="63" started-at="2017-10-07T14:30:28Z" finished-at="2017-10-07T14:30:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ArthaDB_AuditDates_Check_TC002 -->
-        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@31a5c39e]" name="DB_Details" is-config="true" duration-ms="17" started-at="2017-10-04T18:28:20Z" finished-at="2017-10-04T18:28:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DB_Details -->
-        <test-method status="PASS" signature="ArthaDB_Account_Number_Check_TC003()[pri:0, instance:exe.Arthadb_Automation@31a5c39e]" name="ArthaDB_Account_Number_Check_TC003" duration-ms="6" started-at="2017-10-04T18:28:20Z" finished-at="2017-10-04T18:28:20Z">
+        <test-method status="PASS" signature="ArthaDB_Account_Number_Check_TC003()[pri:0, instance:exe.Arthadb_Automation@1d057a39]" name="ArthaDB_Account_Number_Check_TC003" duration-ms="15" started-at="2017-10-07T14:30:28Z" finished-at="2017-10-07T14:30:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ArthaDB_Account_Number_Check_TC003 -->
-        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@31a5c39e]" name="DB_Details" is-config="true" duration-ms="31" started-at="2017-10-04T18:28:20Z" finished-at="2017-10-04T18:28:21Z">
+        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@1d057a39]" name="DB_Details" is-config="true" duration-ms="0" started-at="2017-10-07T14:30:28Z" finished-at="2017-10-07T14:30:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DB_Details -->
-        <test-method status="PASS" signature="ArthaDB_ChargeType_Check_TC004()[pri:0, instance:exe.Arthadb_Automation@31a5c39e]" name="ArthaDB_ChargeType_Check_TC004" duration-ms="5" started-at="2017-10-04T18:28:21Z" finished-at="2017-10-04T18:28:21Z">
+        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@1d057a39]" name="DB_Details" is-config="true" duration-ms="16" started-at="2017-10-07T14:30:28Z" finished-at="2017-10-07T14:30:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DB_Details -->
+        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@1d057a39]" name="DB_Details" is-config="true" duration-ms="15" started-at="2017-10-07T14:30:28Z" finished-at="2017-10-07T14:30:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DB_Details -->
+        <test-method status="PASS" signature="ArthaDB_ChargeType_Check_TC004()[pri:0, instance:exe.Arthadb_Automation@1d057a39]" name="ArthaDB_ChargeType_Check_TC004" duration-ms="0" started-at="2017-10-07T14:30:28Z" finished-at="2017-10-07T14:30:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ArthaDB_ChargeType_Check_TC004 -->
-        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@31a5c39e]" name="DB_Details" is-config="true" duration-ms="23" started-at="2017-10-04T18:28:21Z" finished-at="2017-10-04T18:28:21Z">
+        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@1d057a39]" name="DB_Details" is-config="true" duration-ms="16" started-at="2017-10-07T14:30:28Z" finished-at="2017-10-07T14:30:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DB_Details -->
-        <test-method status="PASS" signature="ArthaDB_Invoice_Number_Check_TC005()[pri:0, instance:exe.Arthadb_Automation@31a5c39e]" name="ArthaDB_Invoice_Number_Check_TC005" duration-ms="5" started-at="2017-10-04T18:28:21Z" finished-at="2017-10-04T18:28:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ArthaDB_Invoice_Number_Check_TC005 -->
-        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@31a5c39e]" name="DB_Details" is-config="true" duration-ms="22" started-at="2017-10-04T18:28:21Z" finished-at="2017-10-04T18:28:21Z">
+        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@1d057a39]" name="DB_Details" is-config="true" duration-ms="0" started-at="2017-10-07T14:30:28Z" finished-at="2017-10-07T14:30:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DB_Details -->
-        <test-method status="PASS" signature="ArthaDB_Transaction_Amount_Check_TC006()[pri:0, instance:exe.Arthadb_Automation@31a5c39e]" name="ArthaDB_Transaction_Amount_Check_TC006" duration-ms="15" started-at="2017-10-04T18:28:21Z" finished-at="2017-10-04T18:28:21Z">
+        <test-method status="PASS" signature="ArthaDB_Transaction_Amount_Check_TC006()[pri:0, instance:exe.Arthadb_Automation@1d057a39]" name="ArthaDB_Transaction_Amount_Check_TC006" duration-ms="0" started-at="2017-10-07T14:30:28Z" finished-at="2017-10-07T14:30:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ArthaDB_Transaction_Amount_Check_TC006 -->
-        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@31a5c39e]" name="DB_Details" is-config="true" duration-ms="20" started-at="2017-10-04T18:28:21Z" finished-at="2017-10-04T18:28:21Z">
+        <test-method status="PASS" signature="ArthaDB_Invoice_Number_Check_TC005()[pri:0, instance:exe.Arthadb_Automation@1d057a39]" name="ArthaDB_Invoice_Number_Check_TC005" duration-ms="0" started-at="2017-10-07T14:30:28Z" finished-at="2017-10-07T14:30:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DB_Details -->
-        <test-method status="FAIL" signature="ArthaDB_ChargeSign_Check_TC007()[pri:0, instance:exe.Arthadb_Automation@31a5c39e]" name="ArthaDB_ChargeSign_Check_TC007" duration-ms="5" started-at="2017-10-04T18:28:21Z" finished-at="2017-10-04T18:28:21Z">
+        </test-method> <!-- ArthaDB_Invoice_Number_Check_TC005 -->
+        <test-method status="FAIL" signature="ArthaDB_ChargeSign_Check_TC007()[pri:0, instance:exe.Arthadb_Automation@1d057a39]" name="ArthaDB_ChargeSign_Check_TC007" duration-ms="0" started-at="2017-10-07T14:30:28Z" finished-at="2017-10-07T14:30:28Z">
           <exception class="junit.framework.AssertionFailedError">
             <message>
               <![CDATA[PAYMENTS-Charge Sign Codes check is Failed at Account_Number=ACCD101N8776123, expected:<0> but was:<1>]]>
@@ -92,20 +92,20 @@
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
 	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- junit.framework.AssertionFailedError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ArthaDB_ChargeSign_Check_TC007 -->
-        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@31a5c39e]" name="DB_Details" is-config="true" duration-ms="18" started-at="2017-10-04T18:28:21Z" finished-at="2017-10-04T18:28:21Z">
+        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@1d057a39]" name="DB_Details" is-config="true" duration-ms="16" started-at="2017-10-07T14:30:28Z" finished-at="2017-10-07T14:30:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DB_Details -->
-        <test-method status="FAIL" signature="ArthaDB_Record_Type_Check_TC008()[pri:0, instance:exe.Arthadb_Automation@31a5c39e]" name="ArthaDB_Record_Type_Check_TC008" duration-ms="5" started-at="2017-10-04T18:28:21Z" finished-at="2017-10-04T18:28:21Z">
+        <test-method status="FAIL" signature="ArthaDB_Record_Type_Check_TC008()[pri:0, instance:exe.Arthadb_Automation@1d057a39]" name="ArthaDB_Record_Type_Check_TC008" duration-ms="0" started-at="2017-10-07T14:30:28Z" finished-at="2017-10-07T14:30:28Z">
           <exception class="junit.framework.AssertionFailedError">
             <message>
               <![CDATA[PAYMENTS-Record Type check is Failed at Invoice_Number=J9908844423C102,J9160067066C122,J91606706e6C122, expected:<0> but was:<3>]]>
@@ -138,20 +138,20 @@
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
 	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- junit.framework.AssertionFailedError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ArthaDB_Record_Type_Check_TC008 -->
-        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@31a5c39e]" name="DB_Details" is-config="true" duration-ms="32" started-at="2017-10-04T18:28:21Z" finished-at="2017-10-04T18:28:21Z">
+        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@1d057a39]" name="DB_Details" is-config="true" duration-ms="15" started-at="2017-10-07T14:30:28Z" finished-at="2017-10-07T14:30:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DB_Details -->
-        <test-method status="FAIL" signature="ArthaDB_Customer_FirstName_Check_TC009()[pri:0, instance:exe.Arthadb_Automation@31a5c39e]" name="ArthaDB_Customer_FirstName_Check_TC009" duration-ms="10" started-at="2017-10-04T18:28:21Z" finished-at="2017-10-04T18:28:21Z">
+        <test-method status="FAIL" signature="ArthaDB_Customer_FirstName_Check_TC009()[pri:0, instance:exe.Arthadb_Automation@1d057a39]" name="ArthaDB_Customer_FirstName_Check_TC009" duration-ms="0" started-at="2017-10-07T14:30:28Z" finished-at="2017-10-07T14:30:28Z">
           <exception class="junit.framework.AssertionFailedError">
             <message>
               <![CDATA[CUSTOMERS-First Name check is Failed at SSN=620-74-4374, expected:<0> but was:<1>]]>
@@ -184,20 +184,20 @@
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
 	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- junit.framework.AssertionFailedError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ArthaDB_Customer_FirstName_Check_TC009 -->
-        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@31a5c39e]" name="DB_Details" is-config="true" duration-ms="31" started-at="2017-10-04T18:28:21Z" finished-at="2017-10-04T18:28:21Z">
+        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@1d057a39]" name="DB_Details" is-config="true" duration-ms="16" started-at="2017-10-07T14:30:28Z" finished-at="2017-10-07T14:30:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DB_Details -->
-        <test-method status="FAIL" signature="ArthaDB_Customers_SSN_Check_TC010()[pri:0, instance:exe.Arthadb_Automation@31a5c39e]" name="ArthaDB_Customers_SSN_Check_TC010" duration-ms="11" started-at="2017-10-04T18:28:21Z" finished-at="2017-10-04T18:28:21Z">
+        <test-method status="FAIL" signature="ArthaDB_Customers_SSN_Check_TC010()[pri:0, instance:exe.Arthadb_Automation@1d057a39]" name="ArthaDB_Customers_SSN_Check_TC010" duration-ms="0" started-at="2017-10-07T14:30:28Z" finished-at="2017-10-07T14:30:28Z">
           <exception class="junit.framework.AssertionFailedError">
             <message>
               <![CDATA[CUSTOMERS- SSN check is Failed at CustomerPK=5, expected:<0> but was:<1>]]>
@@ -230,85 +230,39 @@
 	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
 	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
 	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- junit.framework.AssertionFailedError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ArthaDB_Customers_SSN_Check_TC010 -->
-        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@31a5c39e]" name="DB_Details" is-config="true" duration-ms="17" started-at="2017-10-04T18:28:21Z" finished-at="2017-10-04T18:28:21Z">
+        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@1d057a39]" name="DB_Details" is-config="true" duration-ms="16" started-at="2017-10-07T14:30:28Z" finished-at="2017-10-07T14:30:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DB_Details -->
-        <test-method status="PASS" signature="ArthaDB_Record_Type_Check_TC011()[pri:0, instance:exe.Arthadb_Automation@31a5c39e]" name="ArthaDB_Record_Type_Check_TC011" duration-ms="5" started-at="2017-10-04T18:28:21Z" finished-at="2017-10-04T18:28:21Z">
+        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@1d057a39]" name="DB_Details" is-config="true" duration-ms="0" started-at="2017-10-07T14:30:28Z" finished-at="2017-10-07T14:30:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DB_Details -->
+        <test-method status="PASS" signature="ArthaDB_Record_Type_Check_TC011()[pri:0, instance:exe.Arthadb_Automation@1d057a39]" name="ArthaDB_Record_Type_Check_TC011" duration-ms="0" started-at="2017-10-07T14:30:28Z" finished-at="2017-10-07T14:30:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ArthaDB_Record_Type_Check_TC011 -->
-        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@31a5c39e]" name="DB_Details" is-config="true" duration-ms="18" started-at="2017-10-04T18:28:21Z" finished-at="2017-10-04T18:28:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DB_Details -->
-        <test-method status="PASS" signature="ArthaDB_Premise_City_Check_TC012()[pri:0, instance:exe.Arthadb_Automation@31a5c39e]" name="ArthaDB_Premise_City_Check_TC012" duration-ms="5" started-at="2017-10-04T18:28:21Z" finished-at="2017-10-04T18:28:21Z">
+        <test-method status="PASS" signature="ArthaDB_Premise_City_Check_TC012()[pri:0, instance:exe.Arthadb_Automation@1d057a39]" name="ArthaDB_Premise_City_Check_TC012" duration-ms="19" started-at="2017-10-07T14:30:28Z" finished-at="2017-10-07T14:30:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ArthaDB_Premise_City_Check_TC012 -->
-        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@31a5c39e]" name="DB_Details" is-config="true" duration-ms="28" started-at="2017-10-04T18:28:21Z" finished-at="2017-10-04T18:28:21Z">
+        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@1d057a39]" name="DB_Details" is-config="true" duration-ms="6" started-at="2017-10-07T14:30:28Z" finished-at="2017-10-07T14:30:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DB_Details -->
-        <test-method status="PASS" signature="ArthaDB_PrimaryPhoneNumber_TC013()[pri:0, instance:exe.Arthadb_Automation@31a5c39e]" name="ArthaDB_PrimaryPhoneNumber_TC013" duration-ms="4" started-at="2017-10-04T18:28:21Z" finished-at="2017-10-04T18:28:21Z">
+        <test-method status="PASS" signature="ArthaDB_PrimaryPhoneNumber_TC013()[pri:0, instance:exe.Arthadb_Automation@1d057a39]" name="ArthaDB_PrimaryPhoneNumber_TC013" duration-ms="0" started-at="2017-10-07T14:30:28Z" finished-at="2017-10-07T14:30:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ArthaDB_PrimaryPhoneNumber_TC013 -->
-        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@31a5c39e]" name="DB_Details" is-config="true" duration-ms="16" started-at="2017-10-04T18:28:21Z" finished-at="2017-10-04T18:28:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DB_Details -->
-        <test-method status="FAIL" signature="ArthaDB_ZipCode_TC013()[pri:0, instance:exe.Arthadb_Automation@31a5c39e]" name="ArthaDB_ZipCode_TC013" duration-ms="15" started-at="2017-10-04T18:28:21Z" finished-at="2017-10-04T18:28:21Z">
-          <exception class="junit.framework.AssertionFailedError">
-            <message>
-              <![CDATA[Customer - PrimaryPhoneNumber check is Failed at SSN=563-13-3480,405-05-7405,348-37-6100, expected:<0> but was:<3>]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[junit.framework.AssertionFailedError: Customer - PrimaryPhoneNumber check is Failed at SSN=563-13-3480,405-05-7405,348-37-6100, expected:<0> but was:<3>
-	at junit.framework.Assert.fail(Assert.java:57)
-	at junit.framework.Assert.failNotEquals(Assert.java:329)
-	at junit.framework.Assert.assertEquals(Assert.java:78)
-	at junit.framework.Assert.assertEquals(Assert.java:234)
-	at exe.Arthadb_Automation.ArthaDB_ZipCode_TC013(Arthadb_Automation.java:612)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- junit.framework.AssertionFailedError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ArthaDB_ZipCode_TC013 -->
       </class> <!-- exe.Arthadb_Automation -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

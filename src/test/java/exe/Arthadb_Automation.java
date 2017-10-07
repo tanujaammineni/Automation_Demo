@@ -48,7 +48,7 @@ public class Arthadb_Automation
 	public void DB_Details() throws ClassNotFoundException, SQLException 
 	  {
 		Class.forName("com.mysql.jdbc.Driver");
-		  con=DriverManager.getConnection("jdbc:mysql://localhost:3307/arthadb","root","mysql"); 
+		  con=DriverManager.getConnection("jdbc:mysql://localhost:3306/arthadb","root","mysql"); 
 		  stmt=con.createStatement(); 
 	  }
 	
