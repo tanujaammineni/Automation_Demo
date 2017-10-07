@@ -52,7 +52,7 @@ public class Arthadb_Automation
 		  stmt=con.createStatement(); 
 	  }
 	
-	//ProdCodes_Check Test Script
+	//ProdCodes_Check Test Script 
 	@Test(priority=1)
 	public void ArthaDB_ProdCodes_Check_TC001() throws SQLException, RowsExceededException, WriteException, IOException 
 	  {
