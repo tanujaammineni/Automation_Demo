@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite name="Failed suite [Suite]">
+  <test name="Test(failed)">
     <classes>
       <class name="exe.Arthadb_Automation">
         <methods>
           <include name="ArthaDB_PrimaryPhoneNumber_TC003"/>
-          <include name="ArthaDB_Customer_Details_Update_Check_TC004"/>
           <include name="DB_Details"/>
           <include name="ArthaDB_Customer_FirstName_Check_TC001"/>
         </methods>
       </class> <!-- exe.Arthadb_Automation -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
