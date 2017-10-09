@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" total="5" passed="3">
+<testng-results skipped="0" failed="2" total="4" passed="2">
   <reporter-output>
-    <line>
-      <![CDATA[Customer - Details are updated at Customer SSN= 123-45-6784,]]>
-    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="462" started-at="2017-10-09T08:16:49Z" finished-at="2017-10-09T08:16:49Z">
+  <suite name="Suite" duration-ms="524" started-at="2017-10-09T08:46:58Z" finished-at="2017-10-09T08:46:59Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="462" started-at="2017-10-09T08:16:49Z" finished-at="2017-10-09T08:16:49Z">
+    <test name="Test" duration-ms="524" started-at="2017-10-09T08:46:58Z" finished-at="2017-10-09T08:46:59Z">
       <class name="exe.Arthadb_Automation">
-        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@475530b9]" name="DB_Details" is-config="true" duration-ms="380" started-at="2017-10-09T13:46:49Z" finished-at="2017-10-09T13:46:49Z">
+        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@475530b9]" name="DB_Details" is-config="true" duration-ms="414" started-at="2017-10-09T14:16:58Z" finished-at="2017-10-09T14:16:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DB_Details -->
-        <test-method status="FAIL" signature="ArthaDB_Customer_FirstName_Check_TC001()[pri:0, instance:exe.Arthadb_Automation@475530b9]" name="ArthaDB_Customer_FirstName_Check_TC001" duration-ms="15" started-at="2017-10-09T13:46:49Z" finished-at="2017-10-09T13:46:49Z">
+        <test-method status="FAIL" signature="ArthaDB_Customer_FirstName_Check_TC001()[pri:0, instance:exe.Arthadb_Automation@475530b9]" name="ArthaDB_Customer_FirstName_Check_TC001" duration-ms="63" started-at="2017-10-09T14:16:59Z" finished-at="2017-10-09T14:16:59Z">
           <exception class="junit.framework.AssertionFailedError">
             <message>
               <![CDATA[CUSTOMERS-FirstName check is Failed at SSN=123-45-6781,123-45-6782, expected:<0> but was:<2>]]>
@@ -56,19 +53,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ArthaDB_Customer_FirstName_Check_TC001 -->
-        <test-method status="PASS" signature="ArthaDB_Customers_SSN_Check_TC002()[pri:0, instance:exe.Arthadb_Automation@475530b9]" name="ArthaDB_Customers_SSN_Check_TC002" duration-ms="16" started-at="2017-10-09T13:46:49Z" finished-at="2017-10-09T13:46:49Z">
+        <test-method status="PASS" signature="ArthaDB_Customers_SSN_Check_TC002()[pri:0, instance:exe.Arthadb_Automation@475530b9]" name="ArthaDB_Customers_SSN_Check_TC002" duration-ms="0" started-at="2017-10-09T14:16:59Z" finished-at="2017-10-09T14:16:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ArthaDB_Customers_SSN_Check_TC002 -->
-        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@475530b9]" name="DB_Details" is-config="true" duration-ms="0" started-at="2017-10-09T13:46:49Z" finished-at="2017-10-09T13:46:49Z">
+        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@475530b9]" name="DB_Details" is-config="true" duration-ms="0" started-at="2017-10-09T14:16:59Z" finished-at="2017-10-09T14:16:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DB_Details -->
-        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@475530b9]" name="DB_Details" is-config="true" duration-ms="4" started-at="2017-10-09T13:46:49Z" finished-at="2017-10-09T13:46:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DB_Details -->
-        <test-method status="FAIL" signature="ArthaDB_PrimaryPhoneNumber_TC003()[pri:0, instance:exe.Arthadb_Automation@475530b9]" name="ArthaDB_PrimaryPhoneNumber_TC003" duration-ms="0" started-at="2017-10-09T13:46:49Z" finished-at="2017-10-09T13:46:49Z">
+        <test-method status="FAIL" signature="ArthaDB_PrimaryPhoneNumber_TC003()[pri:0, instance:exe.Arthadb_Automation@475530b9]" name="ArthaDB_PrimaryPhoneNumber_TC003" duration-ms="0" started-at="2017-10-09T14:16:59Z" finished-at="2017-10-09T14:16:59Z">
           <exception class="junit.framework.AssertionFailedError">
             <message>
               <![CDATA[Customer - PrimaryPhoneNumber check is Failed at SSN=123-45-6781, expected:<0> but was:<1>]]>
@@ -110,25 +103,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ArthaDB_PrimaryPhoneNumber_TC003 -->
-        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@475530b9]" name="DB_Details" is-config="true" duration-ms="16" started-at="2017-10-09T13:46:49Z" finished-at="2017-10-09T13:46:49Z">
+        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@475530b9]" name="DB_Details" is-config="true" duration-ms="0" started-at="2017-10-09T14:16:59Z" finished-at="2017-10-09T14:16:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DB_Details -->
-        <test-method status="PASS" signature="ArthaDB_MailingAddressZipCode_Check_TC005()[pri:0, instance:exe.Arthadb_Automation@475530b9]" name="ArthaDB_MailingAddressZipCode_Check_TC005" duration-ms="0" started-at="2017-10-09T13:46:49Z" finished-at="2017-10-09T13:46:49Z">
+        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@475530b9]" name="DB_Details" is-config="true" duration-ms="16" started-at="2017-10-09T14:16:59Z" finished-at="2017-10-09T14:16:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DB_Details -->
+        <test-method status="PASS" signature="ArthaDB_MailingAddressZipCode_Check_TC005()[pri:0, instance:exe.Arthadb_Automation@475530b9]" name="ArthaDB_MailingAddressZipCode_Check_TC005" duration-ms="0" started-at="2017-10-09T14:16:59Z" finished-at="2017-10-09T14:16:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ArthaDB_MailingAddressZipCode_Check_TC005 -->
-        <test-method status="PASS" signature="ArthaDB_Customer_Details_Update_Check_TC004()[pri:0, instance:exe.Arthadb_Automation@475530b9]" name="ArthaDB_Customer_Details_Update_Check_TC004" duration-ms="0" started-at="2017-10-09T13:46:49Z" finished-at="2017-10-09T13:46:49Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Customer - Details are updated at Customer SSN= 123-45-6784,]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- ArthaDB_Customer_Details_Update_Check_TC004 -->
-        <test-method status="PASS" signature="DB_Details()[pri:0, instance:exe.Arthadb_Automation@475530b9]" name="DB_Details" is-config="true" duration-ms="0" started-at="2017-10-09T13:46:49Z" finished-at="2017-10-09T13:46:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DB_Details -->
       </class> <!-- exe.Arthadb_Automation -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->

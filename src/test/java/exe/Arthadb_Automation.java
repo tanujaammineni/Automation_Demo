@@ -165,7 +165,7 @@ public class Arthadb_Automation
 	/*
 	 * Customer Details Update Check
 	 * Here If any Customer Change Those respective Details, we will find those SSN Numbers.
-	 */
+	 
 	@Test(priority=4)
 	public void ArthaDB_Customer_Details_Update_Check_TC004() throws SQLException
 	{
@@ -191,7 +191,7 @@ public class Arthadb_Automation
 			Reporter.log("Customer - Details are updated at Customer SSN= "+Update_r);
 			//Assert.assertEquals("Customer - Details are updated at Customer SSN= "+Update_r, 0, Noc);
 		}
-	}
+	} */
 	/*
 	 * Customer MailingAddressZipCode is mandatory and it is in specified format in 5 digits (for example 44444)
 	 */
