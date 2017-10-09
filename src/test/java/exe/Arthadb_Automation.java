@@ -191,8 +191,7 @@ public class Arthadb_Automation
 		}
 	}
 	/*
-	 * Customer MailingAddressZipCode is mandatory and it is in specified format in 5 digits (for example 44444)  
-	 * 
+	 * Customer MailingAddressZipCode is mandatory and it is in specified format in 5 digits (for example 44444)
 	 */
 	@Test(priority=5)
 	public void ArthaDB_MailingAddressZipCode_Check_TC005() throws SQLException
