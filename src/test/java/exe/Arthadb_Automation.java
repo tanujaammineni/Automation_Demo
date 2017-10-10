@@ -237,6 +237,7 @@ public class Arthadb_Automation
 		{ 
 			int Noc=0; 
 			ResultSet rs=stmt.executeQuery("SELECT * FROM `arthadb`.`customers` where MailingAddressZipCode not regexp '[0-9]{5}' or MailingAddressZipCode is null"); 
+			Reporter.log("Customer MailingAddressZipCode Check Query Executeed /");
 			List<String> ZipCode=new ArrayList<String>();
 			while (rs.next()) 
 			{
@@ -247,6 +248,7 @@ public class Arthadb_Automation
 			if(Noc==0)
 			{
 				Assert.assertEquals("CUSTOMERS MailingAddressZipCode check is Passed", 0, Noc);
+				
 			}
 			else
 			{
@@ -254,6 +256,7 @@ public class Arthadb_Automation
 				{
 					TC005r.append(ZipCode.get(i)+","); 	  
 				}
+			
 				Assert.assertEquals("CUSTOMERS MailingAddressZipCode check is Failed at SSN="+TC005r, 0, Noc);
 			}  
 		}
