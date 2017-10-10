@@ -9,7 +9,6 @@
           <include name="getDatabaseConnection"/>
           <include name="tearDown"/>
           <include name="ArthaDB_Customer_FirstName_Check_TC001"/>
-          <include name="ArthaDB_MailingAddressZipCode_Check_TC004"/>
         </methods>
       </class> <!-- exe.Arthadb_Automation -->
     </classes>

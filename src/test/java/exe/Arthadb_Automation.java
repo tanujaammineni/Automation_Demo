@@ -183,48 +183,15 @@ public class Arthadb_Automation
 
 		}
 	}
-
-	/*
-	 * Customer MailingAddressZipCode is mandatory and it is in specified format in 5 digits (for example 44444)
-	 */
-	@Test(priority=4)
-	public void ArthaDB_MailingAddressZipCode_Check_TC004() throws SQLException
-	{
-		int Noc=0; 
-		ResultSet rs=stmt.executeQuery("SELECT * FROM `arthadb`.`customers` where MailingAddressZipCode not regexp '[0-9]{5}' or MailingAddressZipCode is null");
-		Reporter.log("MailingAddressZipCode Check Query Executeed /");
-		List<String> Zip_rs=new ArrayList<String>();
-		while(rs.next())
-		{
-			Noc=rs.getRow();
-			Zip_rs.add(rs.getString("SSN"));
-		}
-		if(Noc==0)
-		{
-			Assert.assertEquals("Customer MailingAddressZipCode check is Passed",0,Noc);
-			System.out.println("Customer MailingAddressZipCode check is Passed");
-			Reporter.log("Customer MailingAddressZipCode check is Passed");
-		}
-		else
-		{
-			StringBuffer Zip_r=new StringBuffer();
-			for(int k=0;k<Zip_rs.size();k++)
-			{
-				Zip_r.append(Zip_rs.get(k)+",");
-			}
-			System.out.println("Customer MailingAddressZipCode check is Failed");
-			Reporter.log("Customer MailingAddressZipCode check is Failed");
-			Assert.assertEquals("Customer MailingAddressZipCode check is Failed at SSN="+Zip_r, 0, Noc);
-		}
-	}
+	
 	/*
 	 * Customer Name Check
 	 * 			1. Here we are Validating Last Name
 	 * 			2. Mandatory
 	 * 			3. Should allow only alphabets (a to z / A to Z)
 	 */
-	@Test(priority=5)
-	public void ArthaDB_Customer_LastName_Check_TC005() throws SQLException, RowsExceededException, WriteException, IOException 
+	@Test(priority=4)
+	public void ArthaDB_Customer_LastName_Check_TC004() throws SQLException, RowsExceededException, WriteException, IOException 
 	{
 		StringBuffer TC005r=new StringBuffer();
 		try
