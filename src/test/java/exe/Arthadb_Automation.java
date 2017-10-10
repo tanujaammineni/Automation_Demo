@@ -60,16 +60,16 @@ public class Arthadb_Automation
 	@Test(priority=1)
 	public void ArthaDB_Customer_FirstName_Check_TC001() throws SQLException, RowsExceededException, WriteException, IOException 
 	{
-		StringBuffer TC009r=new StringBuffer();
+		StringBuffer TC001r=new StringBuffer();
 		try
 		{ 
 			int Noc=0; 
 			ResultSet rs=stmt.executeQuery("select * from customers where FirstName regexp '^[^A-Za-z]' or FirstName is null"); 
-			List<String> TC009rs=new ArrayList<String>();
+			List<String> TC001rs=new ArrayList<String>();
 			while (rs.next()) 
 			{
 				Noc=rs.getRow();
-				TC009rs.add(rs.getString("SSN"));
+				TC001rs.add(rs.getString("SSN"));
 
 			}
 			if(Noc==0)
@@ -78,11 +78,11 @@ public class Arthadb_Automation
 			}
 			else
 			{
-				for(int i=0;i<TC009rs.size();i++)
+				for(int i=0;i<TC001rs.size();i++)
 				{
-					TC009r.append(TC009rs.get(i)+","); 	  
+					TC001r.append(TC001rs.get(i)+","); 	  
 				}
-				Assert.assertEquals("CUSTOMERS-FirstName check is Failed at SSN="+TC009r, 0, Noc);
+				Assert.assertEquals("CUSTOMERS-FirstName check is Failed at SSN="+TC001r, 0, Noc);
 			}  
 		}
 		catch (Exception e1) 
@@ -99,16 +99,16 @@ public class Arthadb_Automation
 	@Test(priority=2)
 	public void ArthaDB_Customers_SSN_Check_TC002() throws SQLException, RowsExceededException, WriteException, IOException 
 	{
-		StringBuffer TC010r=new StringBuffer();
+		StringBuffer TC002r=new StringBuffer();
 		try
 		{ 
 			int Noc=0; 
 			ResultSet rs=stmt.executeQuery("SELECT * FROM customers WHERE SSN not RLIKE '[[:<:]][0-9]{3}[[:>:]](-)[[:<:]][0-9]{2}[[:>:]](-)[[:<:]][0-9]{4}[[:>:]]' or SSN is null"); 
-			List<String> TC010rs=new ArrayList<String>();
+			List<String> TC002rs=new ArrayList<String>();
 			while (rs.next()) 
 			{
 				Noc=rs.getRow();
-				TC010rs.add(rs.getString("CustomerPK"));
+				TC002rs.add(rs.getString("CustomerPK"));
 
 			}
 			if(Noc==0)
@@ -118,11 +118,11 @@ public class Arthadb_Automation
 			}
 			else
 			{
-				for(int i=0;i<TC010rs.size();i++)
+				for(int i=0;i<TC002rs.size();i++)
 				{
-					TC010r.append(TC010rs.get(i)+","); 
+					TC002r.append(TC002rs.get(i)+","); 
 				}
-				Assert.assertEquals("CUSTOMERS- SSN check is Failed at CustomerPK="+TC010r, 0, Noc);
+				Assert.assertEquals("CUSTOMERS- SSN check is Failed at CustomerPK="+TC002r, 0, Noc);
 			}  
 		}
 		catch (Exception e1) 
@@ -163,40 +163,10 @@ public class Arthadb_Automation
 	}
 
 	/*
-	 * Customer Details Update Check
-	 * Here If any Customer Change Those respective Details, we will find those SSN Numbers.
-	 
-	@Test(priority=4)
-	public void ArthaDB_Customer_Details_Update_Check_TC004() throws SQLException
-	{
-		int Noc=0; 
-		ResultSet rs=stmt.executeQuery("SELECT * FROM arthadb.customers_audit_table where action='Update'");
-		List<String> Update_rs=new ArrayList<String>();
-		while(rs.next())
-		{
-			Noc=rs.getRow();
-			Update_rs.add(rs.getString("SSN"));
-		}
-		if(Noc==0)
-		{
-			Assert.assertEquals("Customer - Details check is Passed",0,Noc);
-		}
-		else
-		{
-			StringBuffer Update_r=new StringBuffer();
-			for(int k=0;k<Update_rs.size();k++)
-			{
-				Update_r.append(Update_rs.get(k)+",");
-			}
-			Reporter.log("Customer - Details are updated at Customer SSN= "+Update_r);
-			//Assert.assertEquals("Customer - Details are updated at Customer SSN= "+Update_r, 0, Noc);
-		}
-	} */
-	/*
 	 * Customer MailingAddressZipCode is mandatory and it is in specified format in 5 digits (for example 44444)
 	 */
-	@Test(priority=5)
-	public void ArthaDB_MailingAddressZipCode_Check_TC005() throws SQLException
+	@Test(priority=4)
+	public void ArthaDB_MailingAddressZipCode_Check_TC004() throws SQLException
 	{
 		int Noc=0; 
 		ResultSet rs=stmt.executeQuery("SELECT * FROM `arthadb`.`customers` where MailingAddressZipCode NOT REGEXP '[0-9]{5}'");
@@ -219,5 +189,44 @@ public class Arthadb_Automation
 			}
 			Assert.assertEquals("Customer - MailingAddressZipCode check is Failed at SSN="+Zip_r, 0, Noc);
 		}
+	}
+	/*
+	 * Customer Name Check
+	 * 			1. Here we are Validating Last Name
+	 * 			2. Mandatory
+	 * 			3. Should allow only alphabets (a to z / A to Z)
+	 */
+	@Test(priority=5)
+	public void ArthaDB_Customer_LastName_Check_TC005() throws SQLException, RowsExceededException, WriteException, IOException 
+	{
+		StringBuffer TC005r=new StringBuffer();
+		try
+		{ 
+			int Noc=0; 
+			ResultSet rs=stmt.executeQuery("select * from customers where LastName regexp '^[^A-Za-z]' or LastName is null"); 
+			List<String> lastName=new ArrayList<String>();
+			while (rs.next()) 
+			{
+				Noc=rs.getRow();
+				lastName.add(rs.getString("SSN"));
+
+			}
+			if(Noc==0)
+			{
+				Assert.assertEquals("CUSTOMERS-LastName check is PASSED", 0, Noc);
+			}
+			else
+			{
+				for(int i=0;i<lastName.size();i++)
+				{
+					TC005r.append(lastName.get(i)+","); 	  
+				}
+				Assert.assertEquals("CUSTOMERS-LastName check is Failed at SSN="+TC005r, 0, Noc);
+			}  
+		}
+		catch (Exception e1) 
+		{
+			e1.printStackTrace();
+		} 
 	}
 }
