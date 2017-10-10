@@ -190,42 +190,6 @@ public class Arthadb_Automation
 	 * 			2. Mandatory
 	 * 			3. Should allow only alphabets (a to z / A to Z)
 	 */
-	@Test(priority=5)
-	public void ArthaDB_Customer_MailingAddressZipCode_Check_TC005() throws SQLException, RowsExceededException, WriteException, IOException 
-	{
-		StringBuffer TC005r=new StringBuffer();
-		try
-		{ 
-			int Noc=0; 
-			ResultSet rs=stmt.executeQuery("SELECT * FROM `arthadb`.`customers` where MailingAddressZipCode not regexp '[0-9]{5}' or MailingAddressZipCode is null"); 
-			Reporter.log("Customer MailingAddressZipCode Check Query Executeed /");
-			List<String> ZipCode=new ArrayList<String>();
-			while (rs.next()) 
-			{
-				Noc=rs.getRow();
-				ZipCode.add(rs.getString("SSN"));
-
-			}
-			if(Noc==0)
-			{
-				Assert.assertEquals("CUSTOMERS MailingAddressZipCode check is Passed", 0, Noc);
-				
-			}
-			else
-			{
-				for(int i=0;i<ZipCode.size();i++)
-				{
-					TC005r.append(ZipCode.get(i)+","); 	  
-				}
-				
-				Assert.assertEquals("CUSTOMERS MailingAddressZipCode check is Failed at SSN="+TC005r, 0, Noc);
-			}  
-		}
-		catch (Exception e1) 
-		{
-			e1.printStackTrace();
-		} 
-	}
 	
 	@Test(priority=4)
 	public void ArthaDB_Customer_LastName_Check_TC004() throws SQLException, RowsExceededException, WriteException, IOException 
