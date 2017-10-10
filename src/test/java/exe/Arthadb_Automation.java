@@ -43,19 +43,26 @@ public class Arthadb_Automation
 	Statement stmt;
 
 	//Database Connection Statement
-	@BeforeMethod
-	public void DB_Details() throws ClassNotFoundException, SQLException 
+	@BeforeClass
+	public void getDatabaseConnection() throws ClassNotFoundException, SQLException 
 	{
 		Class.forName("com.mysql.jdbc.Driver");
+		System.out.println("Driver Loaded and Registered Successfully");
+		Reporter.log("Driver Loaded and Registered Successfully");
+		System.out.println("Opening Database Connection...");
 		con=DriverManager.getConnection("jdbc:mysql://localhost:3306/arthadb","root","mysql"); 
+		System.out.println("Connection Established with Database Successfully");
+		Reporter.log("Connection Established with Database Successfully");
 		stmt=con.createStatement(); 
+		System.out.println("Statement Object Created Successfully");
+		Reporter.log("Statement Object Created Successfully");
 	}
 
 	/*
 	 * Customer Name Check
-	 * 			1. Here we are Validating Both First & Last Name
-	 * 			2. Both are Mandatory
-	 * 			3. Both Names Allow Only Alphabets (a to z / A to Z)
+	 * 			1. Here we are Validating Both First 
+	 * 			2. Mandatory
+	 * 			3. Allow Only Alphabets (a to z / A to Z)
 	 */
 	@Test(priority=1)
 	public void ArthaDB_Customer_FirstName_Check_TC001() throws SQLException, RowsExceededException, WriteException, IOException 
@@ -64,7 +71,8 @@ public class Arthadb_Automation
 		try
 		{ 
 			int Noc=0; 
-			ResultSet rs=stmt.executeQuery("select * from customers where FirstName regexp '^[^A-Za-z]' or FirstName is null"); 
+			ResultSet rs=stmt.executeQuery("select * from customers where FirstName regexp '^[^A-Za-z]' or FirstName is null");
+			Reporter.log("FirstName Check Query Executeed /");
 			List<String> TC001rs=new ArrayList<String>();
 			while (rs.next()) 
 			{
@@ -74,7 +82,9 @@ public class Arthadb_Automation
 			}
 			if(Noc==0)
 			{
-				Assert.assertEquals("CUSTOMERS-FirstName check is PASSED", 0, Noc);
+				Assert.assertEquals("CUSTOMERS FirstName check is Passed", 0, Noc);
+				System.out.println("CUSTOMERS FirstName check is Passed");
+				Reporter.log("CUSTOMERS FirstName check is Passed");
 			}
 			else
 			{
@@ -82,7 +92,9 @@ public class Arthadb_Automation
 				{
 					TC001r.append(TC001rs.get(i)+","); 	  
 				}
-				Assert.assertEquals("CUSTOMERS-FirstName check is Failed at SSN="+TC001r, 0, Noc);
+				System.out.println("CUSTOMERS FirstName check is Failed");
+				Reporter.log("CUSTOMERS FirstName check is Failed");
+				Assert.assertEquals("CUSTOMERS FirstName check is Failed at SSN="+TC001r, 0, Noc);
 			}  
 		}
 		catch (Exception e1) 
@@ -104,6 +116,7 @@ public class Arthadb_Automation
 		{ 
 			int Noc=0; 
 			ResultSet rs=stmt.executeQuery("SELECT * FROM customers WHERE SSN not RLIKE '[[:<:]][0-9]{3}[[:>:]](-)[[:<:]][0-9]{2}[[:>:]](-)[[:<:]][0-9]{4}[[:>:]]' or SSN is null"); 
+			Reporter.log("Customers SSN Check Query Executeed /");
 			List<String> TC002rs=new ArrayList<String>();
 			while (rs.next()) 
 			{
@@ -113,8 +126,9 @@ public class Arthadb_Automation
 			}
 			if(Noc==0)
 			{
-				Assert.assertEquals("CUSTOMERS- SSN check is PASSED", 0, Noc);
-
+				Assert.assertEquals("CUSTOMERS SSN check is Passed", 0, Noc);
+				System.out.println("CUSTOMERS SSN check is Passed");
+				Reporter.log("CUSTOMERS SSN check is Passed");
 			}
 			else
 			{
@@ -122,7 +136,9 @@ public class Arthadb_Automation
 				{
 					TC002r.append(TC002rs.get(i)+","); 
 				}
-				Assert.assertEquals("CUSTOMERS- SSN check is Failed at CustomerPK="+TC002r, 0, Noc);
+				System.out.println("CUSTOMERS SSN check is Failed");
+				Reporter.log("CUSTOMERS SSN check is Failed");
+				Assert.assertEquals("CUSTOMERS SSN check is Failed at CustomerPK="+TC002r, 0, Noc);
 			}  
 		}
 		catch (Exception e1) 
@@ -141,6 +157,7 @@ public class Arthadb_Automation
 	{
 		int Noc=0; 
 		ResultSet rs=stmt.executeQuery("SELECT * FROM customers WHERE PrimaryPhoneNumber not REGEXP '[+][1] [0-9]{3} [0-9]{3} [0-9]{4}' or PrimaryPhoneNumber is null");
+		Reporter.log("PrimaryPhoneNumber Check Query Executeed /");
 		List<String> Phone_rs=new ArrayList<String>();
 		while(rs.next())
 		{
@@ -149,7 +166,9 @@ public class Arthadb_Automation
 		}
 		if(Noc==0)
 		{
-			Assert.assertEquals("Customer - PrimaryPhoneNumber check is Passed",0,Noc);
+			Assert.assertEquals("Customer PrimaryPhoneNumber check is Passed",0,Noc);
+			System.out.println("Customer PrimaryPhoneNumber check is Passed");
+			Reporter.log("Customer PrimaryPhoneNumber check is Passed");
 		}
 		else
 		{
@@ -158,7 +177,10 @@ public class Arthadb_Automation
 			{
 				Phone_r.append(Phone_rs.get(k)+",");
 			}
-			Assert.assertEquals("Customer - PrimaryPhoneNumber check is Failed at SSN="+Phone_r, 0, Noc);
+			System.out.println("Customer PrimaryPhoneNumber check is Failed");
+			Reporter.log("Customer PrimaryPhoneNumber check is Failed");
+			Assert.assertEquals("Customer PrimaryPhoneNumber check is Failed at SSN="+Phone_r, 0, Noc);
+
 		}
 	}
 
@@ -169,7 +191,8 @@ public class Arthadb_Automation
 	public void ArthaDB_MailingAddressZipCode_Check_TC004() throws SQLException
 	{
 		int Noc=0; 
-		ResultSet rs=stmt.executeQuery("SELECT * FROM `arthadb`.`customers` where MailingAddressZipCode NOT REGEXP '[0-9]{5}'");
+		ResultSet rs=stmt.executeQuery("SELECT * FROM `arthadb`.`customers` where MailingAddressZipCode not regexp '[0-9]{5}' or MailingAddressZipCode is null");
+		Reporter.log("MailingAddressZipCode Check Query Executeed /");
 		List<String> Zip_rs=new ArrayList<String>();
 		while(rs.next())
 		{
@@ -178,7 +201,9 @@ public class Arthadb_Automation
 		}
 		if(Noc==0)
 		{
-			Assert.assertEquals("Customer - MailingAddressZipCode check is Passed",0,Noc);
+			Assert.assertEquals("Customer MailingAddressZipCode check is Passed",0,Noc);
+			System.out.println("Customer MailingAddressZipCode check is Passed");
+			Reporter.log("Customer MailingAddressZipCode check is Passed");
 		}
 		else
 		{
@@ -187,7 +212,9 @@ public class Arthadb_Automation
 			{
 				Zip_r.append(Zip_rs.get(k)+",");
 			}
-			Assert.assertEquals("Customer - MailingAddressZipCode check is Failed at SSN="+Zip_r, 0, Noc);
+			System.out.println("Customer MailingAddressZipCode check is Failed");
+			Reporter.log("Customer MailingAddressZipCode check is Failed");
+			Assert.assertEquals("Customer MailingAddressZipCode check is Failed at SSN="+Zip_r, 0, Noc);
 		}
 	}
 	/*
@@ -204,6 +231,7 @@ public class Arthadb_Automation
 		{ 
 			int Noc=0; 
 			ResultSet rs=stmt.executeQuery("select * from customers where LastName regexp '^[^A-Za-z]' or LastName is null"); 
+			Reporter.log("Customer LastName Check Query Executeed /");
 			List<String> lastName=new ArrayList<String>();
 			while (rs.next()) 
 			{
@@ -213,7 +241,9 @@ public class Arthadb_Automation
 			}
 			if(Noc==0)
 			{
-				Assert.assertEquals("CUSTOMERS-LastName check is PASSED", 0, Noc);
+				Assert.assertEquals("CUSTOMERS LastName check is Passed", 0, Noc);
+				System.out.println("CUSTOMERS LastName check is Passed");
+				Reporter.log("CUSTOMERS LastName check is Passed");
 			}
 			else
 			{
@@ -221,7 +251,9 @@ public class Arthadb_Automation
 				{
 					TC005r.append(lastName.get(i)+","); 	  
 				}
-				Assert.assertEquals("CUSTOMERS-LastName check is Failed at SSN="+TC005r, 0, Noc);
+				System.out.println("CUSTOMERS LastName check is Failed");
+				Reporter.log("CUSTOMERS LastName check is Failed");
+				Assert.assertEquals("CUSTOMERS LastName check is Failed at SSN="+TC005r, 0, Noc);
 			}  
 		}
 		catch (Exception e1) 
@@ -229,4 +261,17 @@ public class Arthadb_Automation
 			e1.printStackTrace();
 		} 
 	}
+	//Closing the Database Connection
+		@AfterClass
+	    public void tearDown() {
+	      if (con != null) {
+	                try {
+	                    System.out.println("Closing Database Connection...");
+	                    con.close();
+	                    System.out.println("Closed Database Connection");
+	                } catch (SQLException ex) {
+	                    ex.printStackTrace();
+	                }
+	            }
+	      }
 }
