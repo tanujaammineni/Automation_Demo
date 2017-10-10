@@ -193,7 +193,7 @@ public class Arthadb_Automation
 	@Test(priority=4)
 	public void ArthaDB_Customer_LastName_Check_TC004() throws SQLException, RowsExceededException, WriteException, IOException 
 	{
-		StringBuffer TC005r=new StringBuffer();
+		StringBuffer TC004r=new StringBuffer();
 		try
 		{ 
 			int Noc=0; 
@@ -216,11 +216,11 @@ public class Arthadb_Automation
 			{
 				for(int i=0;i<lastName.size();i++)
 				{
-					TC005r.append(lastName.get(i)+","); 	  
+					TC004r.append(lastName.get(i)+","); 	  
 				}
 				System.out.println("CUSTOMERS LastName check is Failed");
 				Reporter.log("CUSTOMERS LastName check is Failed");
-				Assert.assertEquals("CUSTOMERS LastName check is Failed at SSN="+TC005r, 0, Noc);
+				Assert.assertEquals("CUSTOMERS LastName check is Failed at SSN="+TC004r, 0, Noc);
 			}  
 		}
 		catch (Exception e1) 
@@ -228,6 +228,41 @@ public class Arthadb_Automation
 			e1.printStackTrace();
 		} 
 	}
+	
+	@Test(priority=5)
+	public void ArthaDB_Customer_LastName_Check_TC005() throws SQLException, RowsExceededException, WriteException, IOException 
+	{
+		StringBuffer TC005r=new StringBuffer();
+		try
+		{ 
+			int Noc=0; 
+			ResultSet rs=stmt.executeQuery("SELECT * FROM `arthadb`.`customers` where MailingAddressZipCode not regexp '[0-9]{5}' or MailingAddressZipCode is null"); 
+			List<String> ZipCode=new ArrayList<String>();
+			while (rs.next()) 
+			{
+				Noc=rs.getRow();
+				ZipCode.add(rs.getString("SSN"));
+
+			}
+			if(Noc==0)
+			{
+				Assert.assertEquals("CUSTOMERS ZipCode check is Passed", 0, Noc);
+			}
+			else
+			{
+				for(int i=0;i<ZipCode.size();i++)
+				{
+					TC005r.append(ZipCode.get(i)+","); 	  
+				}
+				Assert.assertEquals("CUSTOMERS ZipCode check is Failed at SSN="+TC005r, 0, Noc);
+			}  
+		}
+		catch (Exception e1) 
+		{
+			e1.printStackTrace();
+		} 
+	}
+	
 	//Closing the Database Connection
 		@AfterClass
 	    public void tearDown() {
@@ -241,4 +276,5 @@ public class Arthadb_Automation
 	                }
 	            }
 	      }
+		
 }
