@@ -5,8 +5,8 @@
     <classes>
       <class name="exe.Arthadb_Automation">
         <methods>
-          <include name="ArthaDB_Customer_LastName_Check_TC005"/>
           <include name="ArthaDB_PrimaryPhoneNumber_TC003"/>
+          <include name="ArthaDB_Customer_MailingAddressZipCode_Check_TC005"/>
           <include name="getDatabaseConnection"/>
           <include name="tearDown"/>
           <include name="ArthaDB_Customer_FirstName_Check_TC001"/>

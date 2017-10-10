@@ -35,12 +35,12 @@
       <![CDATA[CUSTOMERS LastName check is Passed]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="449" started-at="2017-10-10T10:09:06Z" finished-at="2017-10-10T10:09:06Z">
+  <suite name="Suite" duration-ms="429" started-at="2017-10-10T10:14:03Z" finished-at="2017-10-10T10:14:03Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="449" started-at="2017-10-10T10:09:06Z" finished-at="2017-10-10T10:09:06Z">
+    <test name="Test" duration-ms="429" started-at="2017-10-10T10:14:03Z" finished-at="2017-10-10T10:14:03Z">
       <class name="exe.Arthadb_Automation">
-        <test-method status="PASS" signature="getDatabaseConnection()[pri:0, instance:exe.Arthadb_Automation@475530b9]" name="getDatabaseConnection" is-config="true" duration-ms="391" started-at="2017-10-10T15:39:06Z" finished-at="2017-10-10T15:39:06Z">
+        <test-method status="PASS" signature="getDatabaseConnection()[pri:0, instance:exe.Arthadb_Automation@475530b9]" name="getDatabaseConnection" is-config="true" duration-ms="374" started-at="2017-10-10T15:44:03Z" finished-at="2017-10-10T15:44:03Z">
           <reporter-output>
             <line>
               <![CDATA[Driver Loaded and Registered Successfully]]>
@@ -53,7 +53,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- getDatabaseConnection -->
-        <test-method status="FAIL" signature="ArthaDB_Customer_FirstName_Check_TC001()[pri:0, instance:exe.Arthadb_Automation@475530b9]" name="ArthaDB_Customer_FirstName_Check_TC001" duration-ms="12" started-at="2017-10-10T15:39:06Z" finished-at="2017-10-10T15:39:06Z">
+        <test-method status="FAIL" signature="ArthaDB_Customer_FirstName_Check_TC001()[pri:0, instance:exe.Arthadb_Automation@475530b9]" name="ArthaDB_Customer_FirstName_Check_TC001" duration-ms="12" started-at="2017-10-10T15:44:03Z" finished-at="2017-10-10T15:44:03Z">
           <exception class="junit.framework.AssertionFailedError">
             <message>
               <![CDATA[CUSTOMERS FirstName check is Failed at SSN=123-45-6781,123-45-6782, expected:<0> but was:<2>]]>
@@ -101,7 +101,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- ArthaDB_Customer_FirstName_Check_TC001 -->
-        <test-method status="PASS" signature="ArthaDB_Customers_SSN_Check_TC002()[pri:0, instance:exe.Arthadb_Automation@475530b9]" name="ArthaDB_Customers_SSN_Check_TC002" duration-ms="4" started-at="2017-10-10T15:39:06Z" finished-at="2017-10-10T15:39:06Z">
+        <test-method status="PASS" signature="ArthaDB_Customers_SSN_Check_TC002()[pri:0, instance:exe.Arthadb_Automation@475530b9]" name="ArthaDB_Customers_SSN_Check_TC002" duration-ms="6" started-at="2017-10-10T15:44:03Z" finished-at="2017-10-10T15:44:03Z">
           <reporter-output>
             <line>
               <![CDATA[Customers SSN Check Query Executeed /]]>
@@ -111,7 +111,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- ArthaDB_Customers_SSN_Check_TC002 -->
-        <test-method status="FAIL" signature="ArthaDB_PrimaryPhoneNumber_TC003()[pri:0, instance:exe.Arthadb_Automation@475530b9]" name="ArthaDB_PrimaryPhoneNumber_TC003" duration-ms="4" started-at="2017-10-10T15:39:06Z" finished-at="2017-10-10T15:39:06Z">
+        <test-method status="FAIL" signature="ArthaDB_PrimaryPhoneNumber_TC003()[pri:0, instance:exe.Arthadb_Automation@475530b9]" name="ArthaDB_PrimaryPhoneNumber_TC003" duration-ms="4" started-at="2017-10-10T15:44:03Z" finished-at="2017-10-10T15:44:03Z">
           <exception class="junit.framework.AssertionFailedError">
             <message>
               <![CDATA[Customer PrimaryPhoneNumber check is Failed at SSN=123-45-6781, expected:<0> but was:<1>]]>
@@ -159,7 +159,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- ArthaDB_PrimaryPhoneNumber_TC003 -->
-        <test-method status="PASS" signature="ArthaDB_Customer_LastName_Check_TC004()[pri:0, instance:exe.Arthadb_Automation@475530b9]" name="ArthaDB_Customer_LastName_Check_TC004" duration-ms="2" started-at="2017-10-10T15:39:06Z" finished-at="2017-10-10T15:39:06Z">
+        <test-method status="PASS" signature="ArthaDB_Customer_LastName_Check_TC004()[pri:0, instance:exe.Arthadb_Automation@475530b9]" name="ArthaDB_Customer_LastName_Check_TC004" duration-ms="3" started-at="2017-10-10T15:44:03Z" finished-at="2017-10-10T15:44:03Z">
           <reporter-output>
             <line>
               <![CDATA[Customer LastName Check Query Executeed /]]>
@@ -169,18 +169,18 @@
             </line>
           </reporter-output>
         </test-method> <!-- ArthaDB_Customer_LastName_Check_TC004 -->
-        <test-method status="FAIL" signature="ArthaDB_Customer_LastName_Check_TC005()[pri:0, instance:exe.Arthadb_Automation@475530b9]" name="ArthaDB_Customer_LastName_Check_TC005" duration-ms="3" started-at="2017-10-10T15:39:06Z" finished-at="2017-10-10T15:39:06Z">
+        <test-method status="FAIL" signature="ArthaDB_Customer_MailingAddressZipCode_Check_TC005()[pri:0, instance:exe.Arthadb_Automation@475530b9]" name="ArthaDB_Customer_MailingAddressZipCode_Check_TC005" duration-ms="3" started-at="2017-10-10T15:44:03Z" finished-at="2017-10-10T15:44:03Z">
           <exception class="junit.framework.AssertionFailedError">
             <message>
-              <![CDATA[CUSTOMERS ZipCode check is Failed at SSN=123-45-6783,123-45-6784, expected:<0> but was:<2>]]>
+              <![CDATA[CUSTOMERS MailingAddressZipCode check is Failed at SSN=123-45-6783,123-45-6784, expected:<0> but was:<2>]]>
             </message>
             <full-stacktrace>
-              <![CDATA[junit.framework.AssertionFailedError: CUSTOMERS ZipCode check is Failed at SSN=123-45-6783,123-45-6784, expected:<0> but was:<2>
+              <![CDATA[junit.framework.AssertionFailedError: CUSTOMERS MailingAddressZipCode check is Failed at SSN=123-45-6783,123-45-6784, expected:<0> but was:<2>
 	at junit.framework.Assert.fail(Assert.java:57)
 	at junit.framework.Assert.failNotEquals(Assert.java:329)
 	at junit.framework.Assert.assertEquals(Assert.java:78)
 	at junit.framework.Assert.assertEquals(Assert.java:234)
-	at exe.Arthadb_Automation.ArthaDB_Customer_LastName_Check_TC005(Arthadb_Automation.java:257)
+	at exe.Arthadb_Automation.ArthaDB_Customer_MailingAddressZipCode_Check_TC005(Arthadb_Automation.java:257)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -210,8 +210,8 @@
           </exception> <!-- junit.framework.AssertionFailedError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ArthaDB_Customer_LastName_Check_TC005 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:exe.Arthadb_Automation@475530b9]" name="tearDown" is-config="true" duration-ms="1" started-at="2017-10-10T15:39:06Z" finished-at="2017-10-10T15:39:06Z">
+        </test-method> <!-- ArthaDB_Customer_MailingAddressZipCode_Check_TC005 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:exe.Arthadb_Automation@475530b9]" name="tearDown" is-config="true" duration-ms="2" started-at="2017-10-10T15:44:03Z" finished-at="2017-10-10T15:44:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

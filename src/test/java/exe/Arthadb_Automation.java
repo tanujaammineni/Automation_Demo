@@ -230,7 +230,7 @@ public class Arthadb_Automation
 	}
 	
 	@Test(priority=5)
-	public void ArthaDB_Customer_LastName_Check_TC005() throws SQLException, RowsExceededException, WriteException, IOException 
+	public void ArthaDB_Customer_MailingAddressZipCode_Check_TC005() throws SQLException, RowsExceededException, WriteException, IOException 
 	{
 		StringBuffer TC005r=new StringBuffer();
 		try
@@ -246,7 +246,7 @@ public class Arthadb_Automation
 			}
 			if(Noc==0)
 			{
-				Assert.assertEquals("CUSTOMERS ZipCode check is Passed", 0, Noc);
+				Assert.assertEquals("CUSTOMERS MailingAddressZipCode check is Passed", 0, Noc);
 			}
 			else
 			{
@@ -254,7 +254,7 @@ public class Arthadb_Automation
 				{
 					TC005r.append(ZipCode.get(i)+","); 	  
 				}
-				Assert.assertEquals("CUSTOMERS ZipCode check is Failed at SSN="+TC005r, 0, Noc);
+				Assert.assertEquals("CUSTOMERS MailingAddressZipCode check is Failed at SSN="+TC005r, 0, Noc);
 			}  
 		}
 		catch (Exception e1) 
